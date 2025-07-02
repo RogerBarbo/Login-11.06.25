@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>IMC Calculadora</title>
+  <link rel="icon" href="https://w7.pngwing.com/pngs/217/160/png-transparent-muscular-arm-bodybuilding.png" type="image/png">
+  <link rel="stylesheet" href="./css/global.css">
+ <style>
+    input[type="number"] 
+    {
+      width: 93%;
+      padding: 10px;
+      margin: 15px 0;
+      border: 2px solid #002d5e;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    .new-box
+    {
+      background-color: rgba(255, 255, 255, 0.968);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+      width: 300px;
+    }
+    .container 
+    {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-direction: row;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   input[type=text]
+  {
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 2px solid #002d5e;
+    font-size: 18px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+     <h1>IMC Calculadora</h1>
+      <input type="number" id="peso" placeholder="Peso (kg)">
+      <input type="number" id="altura" placeholder="Altura (cm)">
+      <button onclick="calcularIMC()">Calcular</button>
+     <div id="mensagem" class="mensagem"></div>
+    </div>
+
+    <div class="new-box">
+      <h1>Dados VIA CEP</h1>
+      <input type="text" id="cep" placeholder="cep">
+      <button onclick="getEndereco()">Obter Dados</button>
+      <p id="logradouro"></p>
+      <p id="bairro"></p>
+      <p id="cidade"></p>
+      <p id="estado"></p>
+      <p id="regiao"></p>
+
+    </div>
+  </div>
+
+  <script src="./js/endereco.js"></script>
+
+  <script src="./js/imc.js"></script>
+
+</body>
+</html>

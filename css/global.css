@@ -1,0 +1,75 @@
+body 
+{
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#63efff, #002d5e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1
+{
+  color: #002d5e;
+  font-size: 44px;
+  text-align: center;
+}
+
+.login-box 
+{
+  background: rgba(255, 255, 255, 0.968);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  width: 300px;
+  text-align: center;
+}
+
+input[type="text"], input[type="password"] 
+{
+  width: 93%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: 2px solid #002d5e;
+  font-size: 18px;
+}
+
+button 
+{
+  width: 100%;
+  padding: 10px;
+  background: #002d5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 24px;
+}
+
+button:hover 
+{
+  background: linear-gradient(#002d5e,#63efff);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); 
+}
+
+.mensagem 
+{
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.erro 
+{
+  color: red;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.sucesso 
+{
+  color: green;
+}
