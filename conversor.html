@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/217/160/png-transparent-muscular-arm-bodybuilding.png" type="image/png">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>Conversor de Moeda</title>
+    <style>
+          .money-box
+  {
+      background-color: rgba(255, 255, 255, 0.968);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+      width: 500px;
+  }
+  input[type="number"] 
+  {
+  width: 96%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 2px solid #002d5e;
+  border-radius: 5px;
+  font-size: 18px;
+ }
+ 
+ select
+  {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 2px solid #002d5e;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  h2
+{
+  color: #002d5e;
+  font-size: 40px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="money-box">
+        <h2>Conversor de Moeda</h2>
+        <input type="number" id="amount" placeholder="valor" step="0.01" min="0">
+        <select id="fromCurrency">
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra Esterlina (GBP)</option>
+          <option value="JPY">Iene Japonês (JPY)</option>
+          </select>
+          <select id="toCurrency">
+            <option value="BRL">Real (BRL)</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+            <option value="JPY">Iene Japonês (JPY)</option>
+          </select>
+        <button onclick="converterMoeda()">Converter</button>
+        <button onclick="window.location.href ='odf.html'">Voltar</button>
+        <p id="resultado"></p>
+      </div>
+      
+  <script src="./js/conversor.js"></script>
+</body>
+</html>

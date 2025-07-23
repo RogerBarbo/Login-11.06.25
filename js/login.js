@@ -4,6 +4,9 @@ function fazerLogin()
   const senha = document.getElementById("senha").value;
   const mensagem = document.getElementById("mensagem");
 
+  const usuarioSalvo = localStorage.getItem("emailCadastro");
+  const senhaSalvo = localStorage.getItem("senhaCadastro");
+
   if (usuario === "" || senha === "") 
   {
     mensagem.textContent = "Por favor, preencha todos os campos.";
@@ -11,11 +14,11 @@ function fazerLogin()
     return;
   }
 
-  if (usuario === "batata" && senha === "12345") 
+  if (usuario === usuarioSalvo && senha === senhaSalvo) 
   {
     mensagem.textContent = "Login realizado com sucesso!";
     mensagem.className = "sucesso";
-    window.location.href = "imc.html"
+     window.location.href = "odf.html";
   } 
 
   else 

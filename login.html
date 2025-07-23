@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Login</title>
+  <link rel="icon" href="https://w7.pngwing.com/pngs/217/160/png-transparent-muscular-arm-bodybuilding.png" type="image/png">
+  <link rel="stylesheet" href="./css/global.css">
+  <style>
+    p
+    {
+      text-align: center;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>Login</h1>
+    <input type="email" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="fazerLogin()">Entrar</button>
+    <p><a href = 'esqueceusenha.html' id="login">Esqueceu a senha</a></p>
+    <p><a href ='cadastro.html' id="login">Crie Nova Conta</a></p>
+    <div id="mensagem" class="mensagem"></div>
+  </div>
+
+  <script src = "js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/217/160/png-transparent-muscular-arm-bodybuilding.png" type="image/png">
+    <link rel="stylesheet" href="./css/global.css">
+    <title>Endereço Via CEP</title>
+    <style>
+        input[type="number"] 
+        {
+          width: 93%;
+          padding: 10px;
+          margin: 15px 0;
+          border: 2px solid #002d5e;
+          border-radius: 5px;
+          font-size: 18px;
+        }
+        .new-box
+        {
+          background-color: rgba(255, 255, 255, 0.968);
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+          width: 300px;
+        }
+        </style>
+</head>
+<body>
+    <div class="new-box">
+        <h1>Dados VIA CEP</h1>
+        <input type="text" id="cep" placeholder="cep">
+        <button onclick="getEndereco()">Obter Dados</button>
+        <button onclick="window.location.href ='odf.html'">Voltar</button>
+        <p id="logradouro"></p>
+        <p id="bairro"></p>
+        <p id="cidade"></p>
+        <p id="estado"></p>
+        <p id="regiao"></p>
+      </div>
+      
+  <script src="./js/endereco.js"></script>
+</body>
+</html>
