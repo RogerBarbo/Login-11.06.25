@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Novo Aluno</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <style>
+.money-box
+{
+    background-color: rgba(255, 255, 255, 0.968);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    width: 500px;
+}
+input[type="number"] 
+{
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #002d5e;
+    border-radius: 10px;
+    font-size: 18px;
+    justify-items: center;
+    place-items: center;
+}
+input[type="text"]
+{
+    align-items: center;
+}
+
+</style>
+</head>
+    <body>
+ 
+        <div class="money-box">
+            <h1>Cadastrar Novo Aluno</h1>
+            <input type="text" id="nome" placeholder="Nome completo" required>
+            <input type="number" id="idade" placeholder="Idade" min="0" max="120" step="1"required>
+            <input type="text" id="cep" placeholder="Cep" required>
+           
+            <button onclick="cadastrarAluno()">Cadastrar</button>
+ 
+            <button onclick="window.location.href='index.html'">Voltar</button>
+ 
+            <div id="mensagem" class="mensagem"></div>
+        </div>
+ 
+        <script src="./js/cadastrarAluno.js"></script>
+ 
+    </body>
+</html>
